@@ -1,0 +1,138 @@
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Inicializa los estilos*/
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+/*Le doy estilo a la línea horizontal que utilizo de separador*/
+.separador {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+	
+}
+/*Le doy estilo a la línea horizontal que utilizo de separador*/
+.separador:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+/*Les doy estilo a todos lo botones*/
+.boton {
+  background-color: rgb(189, 205, 214);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2em;
+  outline: 2px solid rgb(189, 205, 214);
+  outline-offset: 3px;
+}
+/*Inicializo como oculto al texto que, en primera instancia, debe permanecer oculto*/
+.texto_oculto{
+	
+	display:  none;
+}
+/*Estilo del menú lateral*/
+.menu_lateral{
+  background: rgb(96, 150, 180);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+/*Estilo de la foto de perfil*/
+.menu_lateral .perfil img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+/*Estilo de los enlaces del menú de navegación*/
+.menu_lateral ul li a{
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+/*Estilo de los íconos del menú de navegación*/
+.icono{
+	
+	width: 16px;
+	height: 16px;
+	margin: 0 auto;
+}
+/*Transición de los enlaces del menú lateral*/ 
+.menu_lateral ul li a:hover,
+.menu_lateral ul li a.active{
+  color: #0c7db1;
+
+  background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.menu_lateral ul li a:hover .icono,
+.menu_lateral ul li a.active .icono{
+  color: #0c7db1;
+}
+/*Transición de los enlaces del menú lateral*/ 
+.menu_lateral ul li a:hover:before,
+.menu_lateral ul li a.active:before{
+  display: block;
+}
+/*Estilo de la sección principal*/
+.seccion{
+  width: calc(100% - 270px);
+  margin-left: 270px;
+  padding: 50px;
+  transition: all 0.5s ease;
+  background:  rgb(238, 233, 218);
+
+}
+/*Estilo de los títulos: Primer letra de mayor tamaño*/
+.titulo::first-letter{
+
+  font-size: 150%;
+
+}
+/*Estilo del texto resaltado*/
+.resaltado{
+
+  text-decoration:  underline;
+  font-weight: bold;
+}
+/*Estilo de los títulos*/
+.titulo{
+	text-decoration:  underline;
+	font-weight: bold;
+	
+}
+/*Estilo de la lista desordenada que describe las tareas*/
+.tarea{
+
+  list-style: inside;
+}
