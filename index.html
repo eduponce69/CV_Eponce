@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="CodigoJS.js"></script>
+	<link rel="icon" type="image/x-icon" href="edu.ico">
+	<link rel="stylesheet" href="estilos.css">
+    <title>CV Eduardo Ponce</title>
+    
+</head>
+<body>
+   
+    
+	<section class="seccion">
+
+		<h2 id="info_personal" class="titulo">Información Personal</h2>
+		<p>&nbsp;</p>
+				
+		<p><span class="resaltado">Nombre y Apellido</span>: Eduardo Mauricio Ponce Amalric.</p>
+		<p><span class="resaltado">Nacionalidad</span>: Argentino.</p>
+		<p><span class="resaltado">Fecha De Nacimiento</span>: 18 de Julio de 1976.</p>
+		<p><span class="resaltado">Lugar De Nacimiento</span>: San Juan – Argentina.</p>
+		<p><span class="resaltado">Estado Civil</span>: Casado.</p>
+		<p>&nbsp;</p>
+				
+		<hr class="separador" />
+
+		<h2 id="estudios" class="titulo">Estudios</h2>
+		<p>&nbsp;</p>
+		<p><span class="resaltado">Estudios Universitarios</span>: Completos.</p>
+		<p><span class="resaltado">Institución</span>: Facultad De Ingeniería de la U.N.S.J.</p>
+		<p><span class="resaltado">Título</span>: Bioingeniero.</p>
+		<p>&nbsp;</p>
+		<button class="boton" id="boton_estudios" onclick="mostrar_estudios();">Mostrar Más Estudios</button>
+		<p>&nbsp;</p>
+		
+			<div class="texto_oculto" id="estudios_oculto">
+			<p><span class="resaltado">Estudios Secundarios</span>: Completos.</p>
+			<p><span class="resaltado">Institución</span>: Escuela Industrial D. F. Sarmiento.</p>
+			<p><span class="resaltado">Título</span>: Técnico Vial.</p>
+			<p>&nbsp;</p>
+			<button class="boton" id="boton_estudios_oculto" onclick="ocultar_estudios();">Ocultar Estudios</button>
+			<p>&nbsp;</p>
+			</div>
+		
+		<hr class="separador" />
+		<h2 id="experiencia" class="titulo">Experiencia Laboral</h2>
+		<p>&nbsp;</p>
+
+		<p><span class="resaltado">Período</span>: Desde Febrero de 2013 hasta La Actualidad.</p>
+		<p><span class="resaltado">Empresa/Empleador</span>: TeCMA SAN JUAN S.A.</p>
+		<p><span class="resaltado">Lugar</span>: TeCMA – Parque Industrial Chimbas.</p>
+		<p><span class="resaltado">Puesto</span>: Responsable de Medio Ambiente.</p>
+		<p>&nbsp;</p>
+
+        <p><span class="resaltado">Tareas Desempeñadas</span>:</p> 
+        <p>&nbsp;</p>
+        <button class="boton" id="boton_tareas1" onclick="mostrar_tareas1();">Mostrar Tareas</button>
+        <p>&nbsp;</p>
+
+			<div class="texto_oculto" id="experiencia_oculto1">
+			
+				<ul class="tareas">
+
+				<li class="tarea">
+					Asegurar que todos los procesos se ajusten a la Normativa Aplicable a la actividad de Transporte y Operación de Residuos Peligrosos realizada en la Empresa.
+				</li>
+				<li class="tarea">
+					Servir de nexo para ajustar los distintos procesos a las características de los residuos de nuestros clientes, logrando una segura recolección, transporte, acopio transitorio, operación y disposición final de los mismos.
+				</li>
+
+				<li class="tarea">
+					Gestión de documentación, presentaciones, escritos y expedientes ante las Autoridades Ambientales tanto Provinciales como Nacionales.
+				</li>
+
+				<li class="tarea">
+					Mantener ordenada y actualizada la Matriz Legal Ambiental.
+				</li>
+
+				<li class="tarea">
+					Confeccionar Procedimientos Ambientales y Operativos.
+				</li>
+
+				<li class="tarea"> 
+					Realizar Inspecciones Ambientales Periódicas.
+				</li>
+
+				<li class="tarea">
+					Capacitar al personal en temas Medioambientales y Operativos.
+				</li>
+
+				<li class="tarea">
+					Auditor interno certificado en normas ISO 9001 y 14001.
+				</li>
+
+				<li class="tarea">
+					Confeccionar y mantener informes, reportes, planes, formatos, registros, y demás documentos del Sistema de Gestión.
+				</li>
+
+				<li class="tarea">
+					Control, Monitoreo y Operación de la Planta de Tratamiento de Efluentes Líquidos (Lodos Activados) de la Empresa. Toma de muestras y medición de las características físico-químicas del efluente y de las variables de control del proceso.
+				</li>
+
+				<li class="tarea">
+				
+				Planificar el cronograma de monitoreos periódicos exigidos por las autoridades.
+				
+				</li>
+
+				<li class="tarea">
+
+					Asegurar que todas las Habilitaciones Sectoriales de la Empresa estén vigentes y gestionar la actualización y/o renovación de las mismas.
+
+				</li>
+
+				</ul>
+				<p>&nbsp;</p>
+				<button class="boton" id="boton_tareas_oculto1" onclick="ocultar_tareas1();">Ocultar Tareas</button>
+				<p>&nbsp;</p>
+			</div>
+		
+		<hr class="separador" />
+		<p>&nbsp;</p>
+		
+		<p><span class="resaltado">Período</span>: Desde Octubre de 2011 hasta Diciembre de 2012.</p>
+		<p><span class="resaltado">Empresa/Empleador</span>: Barrick Exploraciones Argentina S.A.</p>
+		<p><span class="resaltado">Lugar</span>: Proyecto Pascua – Lama: Dique de Colas.</p>
+		<p><span class="resaltado">Puesto</span>: Supervisor de Medio Ambiente.</p>
+		<p>&nbsp;</p>
+		
+        <p><span class="resaltado">Tareas Desempeñadas:</span></p>
+        <p>&nbsp;</p>
+        <button class="boton" id="boton_tareas2" onclick="mostrar_tareas2();">Mostrar Tareas</button>
+        <p>&nbsp;</p>
+			<div class="texto_oculto" id="experiencia_oculto2">
+				
+
+				<ul class="tareas">
+
+				<li class="tarea">
+					
+					Asegurar, por parte de todo el personal afectado al dique de colas, el cumplimiento de los Estándares y Procedimientos establecidos en el Sistema de Gestión Ambiental del Proyecto Pascua - Lama.
+
+				</li>
+				
+				<li class="tarea">
+					
+					Realización de Inspecciones periódicas a los distintos frentes de obra del Dique de Colas.
+
+				</li>
+
+				<li class="tarea">
+					
+					Asesoramiento al Área Construcciones, desde el punto de vista Medioambiental, sobre las mejores opciones constructivas y en las Liberaciones Ambientales de Áreas.
+
+				</li>
+				
+				<li class="tarea">
+					
+					Supervisión de la tarea de Sellado de Pozos ubicados en el emplazamiento del Dique de Colas.
+
+				</li>
+				
+				<li class="tarea">
+					
+					Capacitación del personal, tanto propio como de las empresas contratistas del Dique de Colas, sobre lo establecido en el Sistema de Gestión Ambiental de Pascua – Lama.
+
+				</li>
+
+				<li class="tarea">
+					
+					Confeccionar y mantener informes, reportes, planes, formatos, registros, y demás documentos del Sistema de Gestión Ambiental de Pascua – Lama.
+					
+				</li>
+				</ul>
+				<p>&nbsp;</p>
+				<button class="boton" id="boton_tareas_oculto2" onclick="ocultar_tareas2();">Ocultar Tareas</button>
+				<p>&nbsp;</p>
+			</div>
+
+		<hr class="separador" />
+		<p>&nbsp;</p>
+		<p><span class="resaltado">Período</span>: Desde Agosto de 2009 hasta Septiembre de 2011.</p>
+		<p><span class="resaltado">Empresa/Empleador</span>: Ministerio de Salud Pública de la Nación.</p>
+		<p><span class="resaltado">Lugar</span>: Centro De Chagas Del Hospital Dr. Guillermo Rawson.</p>
+		<p><span class="resaltado">Puesto</span>: Responsable del Área Informática del Centro de Chagas.</p>
+    
+		<p>&nbsp;</p>
+        <p><span class="resaltado">Tareas Desempeñadas:</span></p>
+        <p>&nbsp;</p>
+        <button class="boton" id="boton_tareas3" onclick="mostrar_tareas3();">Mostrar Tareas</button>
+        <p>&nbsp;</p>
+        
+			<div class="texto_oculto" id="experiencia_oculto3">
+
+				<ul class="tareas">
+
+					<li class="tarea">
+					
+						Diseño, Desarrollo, Programación y Mantenimiento de La Base De Datos y del Sistema de Carga de Datos del Servicio de Chagas. Utilizando para esto un Entorno Web y el Gestor de Bases de Datos MySQL.
+					
+					</li>
+
+					<li class="tarea">
+						
+						Utilización y Aplicación de Distintos Sistemas De Información Geográfica: Kosmo, SIGepi, Google Earth, Google Maps.
+
+					</li>
+
+
+					<li class="tarea">
+						
+						Conducción del equipo de personas encargadas de la carga de datos (Data Entrys).
+
+					</li>
+
+					<li class="tarea">
+						
+						Operación y Mantenimiento Preventivo De La Aparatología Del Servicio: Equipo De Hemodinamia, Electrocardiógrafo, Ecocardiógrafo, Holter.
+
+					</li>
+
+				</ul>
+			<p>&nbsp;</p>
+			<button class="boton" id="boton_tareas_oculto3" onclick="ocultar_tareas3();">Ocultar Tareas</button>
+			<p>&nbsp;</p>
+			</div>
+
+		
+		<hr class="separador" />
+		<p>&nbsp;</p>
+		<p><span class="resaltado">Período</span>: Desde Enero de 2010 hasta Septiembre de 2011.</p>
+		<p><span class="resaltado">Empresa/Empleador</span>: Secretaría de Ambiente y Desarrollo Sustentable de San Juan.</p>
+		<p><span class="resaltado">Lugar</span>: Secretaría de Ambiente y Desarrollo Sustentable – Dirección de Gestión Ambiental – Área Residuos Peligrosos.</p>
+		<p><span class="resaltado">Puesto</span>: Evaluador Técnico.</p>
+		<p>&nbsp;</p>
+		<p><span class="resaltado">Tareas Desempeñadas:
+		<p>&nbsp;</p>
+        <button class="boton" id="boton_tareas4" onclick="mostrar_tareas4();">Mostrar Tareas</button>
+        <p>&nbsp;</p>
+        
+			<div class="texto_oculto" id="experiencia_oculto4">
+
+			  <ul class="tareas">
+
+				<li class="tarea">
+
+					Evaluación Técnica y Fiscalización de la Gestión de Residuos Peligrosos de distintos tipos de Industrias, Clínicas, Proyectos y Emprendimientos Mineros, Operadores de Residuos Peligrosos, Transportistas de Residuos Peligrosos. 
+
+				</li>
+
+			  </ul>
+			<p>&nbsp;</p>
+			<button class="boton" id="boton_tareas_oculto4" onclick="ocultar_tareas4();">Ocultar Tareas</button>
+			<p>&nbsp;</p>
+			</div>
+
+		<hr class="separador" />
+		<p>&nbsp;</p>
+		<h2 id="conocimientos" class="titulo">Otros Conocimientos</h2>
+		<p>&nbsp;</p>
+
+		<ul class="tareas">
+
+        <li class="tarea">
+
+          Programación básica C y C++. 
+
+        </li>
+
+        <li class="tarea">
+
+          Manejo de Herramientas Informáticas de Ingeniería: Matlab, Labview, Orcad, Entre Otras.   
+
+        </li>
+
+        <li class="tarea">
+
+          Manejo Completo de Office: Word, Excel, Power Point y Access. 
+
+        </li>
+
+        <li class="tarea">
+
+         Manejo de Herramientas Web: Dreamweaver, Netbeans, SublimeText, Visual Studio Code.  
+
+        </li>
+
+        <li class="tarea">
+
+          Programación y Diseño Web: PHP, HTML, Javascript, CSS. 
+
+        </li>
+
+        <li class="tarea">
+
+         Creación y Mantenimiento de Bases de Datos: MySQL, SQLServer, Access, Oracle.  
+
+        </li>
+
+        <li class="tarea">
+
+         Conocimientos Básicos de Configuración de Redes: Lan, Wan, etc.  
+
+        </li>
+
+        <li class="tarea">
+
+         Conocimientos Básicos de Mantenimiento de PC: Software y Hardware.  
+
+        </li>
+
+        <li class="tarea">
+
+         Curso de Análisis de los Estudios de Impacto Ambiental y de Diseño de Mitigación de Impactos – Dicho proyecto cuenta con financiamiento parcial del Global Environmental Fund (GEF) a través del Programa Descentralizado de Medianas Donaciones y la Wildlife Conservation Society (WCS).  
+
+        </li>
+
+        <li class="tarea">
+
+          Curso de Auditor Certificado Interno Integrado (SGS) y Actualización a la Versión 2015 (IRAM). 
+
+        </li>
+
+		</ul>
+
+      
+		<p>&nbsp;</p>
+		<hr class="separador" />
+		<p>&nbsp;</p>
+		<h2 id="info_contacto" class="titulo">Información de Contacto</h2>
+		<p>&nbsp;</p>
+
+		<p><span class="resaltado">Email</span>: eduponce69@yahoo.com.ar</p>
+		<p><span class="resaltado">Celular</span>: 0264-15662xxxx
+
+		<p>&nbsp;</p>
+    
+    
+        <nav class="menu_lateral">
+            <div class="perfil">
+                <img src="edu.jpeg" alt="Foto de Perfil">
+                                
+            </div>
+            <ul>
+                <li>
+                    <a href="#info_personal">
+                        
+                        <img class="icono" src="usuario.png"></img>
+						<span class="item">Información Personal</span>
+											
+                    </a>
+                </li>
+                <li>
+                    <a href="#estudios">
+                        
+						<img class="icono" src="gorro-de-graduacion.png"></img>
+                        <span class="item">Estudios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experiencia">
+                        
+                        <img class="icono" src="edificio.png"></img>
+						<span class="item">Experiencia Laboral</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#conocimientos">
+                        
+                        <img class="icono" src="informacion.png"></img>
+						<span class="item">Otros Conocimientos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#info_contacto">
+                        
+						<img class="icono" src="formulario.png"></img>
+                        <span class="item">Información de Contacto</span>
+                    </a>
+                </li>
+               
+            </ul>
+        </nav>
+        
+</section>
+ 
+</body>
+</html>
